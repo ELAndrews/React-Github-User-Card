@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import UserCard from "./UserCard";
+import FollowerCard from "./FollowerCard";
 
 export default class User extends React.Component {
   constructor(props) {
@@ -37,18 +38,19 @@ export default class User extends React.Component {
 
   render() {
     return (
-      <div>
-        <span>user component</span>
-        <UserCard state={this.state.user} />
-        <ul>
+      <div className="display">
+        <div className="userDisplay">
+          <UserCard state={this.state.user} />
+        </div>
+        <div className="followersDisplay">
           {this.state.followers.map((curr, index) => {
             return (
-              <li key={index}>
-                <UserCard state={curr} />
-              </li>
+              <div className="followerCard" key={index}>
+                <FollowerCard state={curr} />
+              </div>
             );
           })}
-        </ul>
+        </div>
       </div>
     );
   }

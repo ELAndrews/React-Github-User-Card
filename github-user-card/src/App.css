@@ -1,22 +1,71 @@
 .App {
   text-align: center;
+  background-color: #6a6969;
+  width: 100vw;
+  padding: 30px 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.display {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #09d3ac;
+.followersDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.followerCard {
+  width: calc(30% - 20px);
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.right,
+.left {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  justify-content: space-evenly;
+}
+
+.profileImg {
+  width: 90%;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.name {
+  height: 60%;
+  padding-bottom: 10%;
+  border-bottom: 1px solid #282c34;
+}
+
+p {
+  line-height: 0.8;
+}
+
+.bio {
+  text-align: left;
+  width: 80%;
+}
+
+.followerName {
+  font-size: 0.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
