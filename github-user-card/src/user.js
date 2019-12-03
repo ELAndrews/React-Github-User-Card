@@ -32,10 +32,6 @@ export default class User extends React.Component {
       }, []);
   };
 
-  componentDidUpdate = () => {};
-
-  componentWillUnmount = () => {};
-
   render() {
     return (
       <div className="display">

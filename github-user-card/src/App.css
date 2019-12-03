@@ -47,8 +47,9 @@
 }
 
 .name {
-  height: 60%;
-  padding-bottom: 10%;
+  padding-bottom: 20%;
+  padding-top: 15%;
+  margin: center;
   border-bottom: 1px solid #282c34;
 }
 
