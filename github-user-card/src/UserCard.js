@@ -3,8 +3,13 @@ import GitHubCalendar from "github-calendar";
 
 export default class UserCard extends React.Component {
   render() {
+    GitHubCalendar(".calendar", "ELAndrews", { responsive: true });
     return (
       <div>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+        />
         <a href={this.props.state.html_url}>
           <div className="container">
             <div className="right">
@@ -20,9 +25,7 @@ export default class UserCard extends React.Component {
               <p>Location: {this.props.state.location}</p>
             </div>
             <p className="bio">Bio: {this.props.state.bio}</p>
-          </div>
-          <div className="calendar">
-            {GitHubCalendar(".calendar", "ELAndrews")}
+            <div className="calendar"></div>
           </div>
         </a>
       </div>
